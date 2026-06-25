@@ -2,9 +2,9 @@
 
 An automatic model - BOUNTI-TR - to segment T2w MRI of the fetal brain into 31 ROIs (of left and right hemispheres) from 21-36 weeks of gestational age, including transient regions: Subplate, Ventricular Zone and Ganglionic Eminence (see [^4] for segmentation details) and Periventricular White Matter (subsegmented in 3 crossroad portions: C1, C2+C5 and C4 - see [^5] for segmentation details). 
 
-This model was trained with a large and heteregeneous cohort with different aquisition parameters (FOV:1.5-3T, TE=80-250ms), including the developing human connectome proejct (dHCP) dataset [^1] and clinical cohorts from St. Thomas Hospital, London, UK.
+This model was trained with a large and heteregeneous cohort with different aquisition parameters (FOV=1.5-3T, TE=80-250ms), including the developing human connectome project (dHCP) dataset [^1] and clinical cohorts from St. Thomas Hospital, London, UK.
 
-Please refer to [^2] and [^3] for the repository and paper regarding the reconstruction/regional segmentation pipeline. Further details on methods for training and validating the model can be found on our paper [^4] (winner of best paper in PIPPI workshop part of the MICCAI conference in 2023). 
+Please refer to [^2] and [^3] for the repository and paper regarding the reconstruction/regional segmentation pipeline. Further details on methods for training and validating the model can be found on our paper [^4]
 
 <img width="1908" height="969" alt="Segmentations-model 001" src="https://github.com/user-attachments/assets/9eb668ef-b203-42bf-a476-440bccb9f3f7" />
 
