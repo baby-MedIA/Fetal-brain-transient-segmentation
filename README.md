@@ -6,6 +6,8 @@ This model was trained with a large and heteregeneous cohort with different aqui
 
 Please refer to [^2] and [^3] for the repository and paper regarding the reconstruction/regional segmentation pipeline. Further details on methods for training and validating the model can be found on our paper [^4] (winner of best paper in PIPPI workshop part of the MICCAI conference in 2023). 
 
+<img width="1908" height="969" alt="Segmentations-model 001" src="https://github.com/user-attachments/assets/9eb668ef-b203-42bf-a476-440bccb9f3f7" />
+
 ## Instructions to run BOUNTI-TR:
 
 Preprocessing of the T2w images (in ".nii.gz" format) needs to be done following the tools on this docker [^6] (please read instructions for using the docker):
