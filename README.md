@@ -8,7 +8,7 @@ Please refer to [^2] and [^3] for the repository and paper regarding the reconst
 
 ## Instructions to run BOUNTI-TR:
 
-Preprocessing of the T2w images (in ".nii" format) needs to be done following the tools on this docker [^6] (please read instructions for using the docker):
+Preprocessing of the T2w images (in ".nii.gz" format) needs to be done following the tools on this docker [^6] (please read instructions for using the docker):
 
 1) T2w MRI images for input to BOUNTI-TR should be brain extracted - in case you need to do skull stripping you can use the 3D CNN tool in [^6] - and use the following command on the docker: 
 
@@ -20,7 +20,7 @@ bash /home/auto-proc-svrtk/sctipts/auto-brain-bounti-segmentation-fetal.sh /home
 
 - This command resamples images to the desired image size (256x256x256) using pad and reorients to the standard radiological atlas space.
 
-3) Once preprocess is done use these outputs to either train from scratch (you'll need T2w images + corresponding training labels of the tissues) or test the trained model on your machine (only T2w images needed) - you can also use the environement shared here "bounti-tr.yml" to run it:
+3) Once preprocess is done use these outputs to either train from scratch (you'll need T2w images + corresponding training labels of the tissues) or test the trained model on your machine (only T2w images needed) - you can also use the environement shared here "bounti-tr_env.yml" to run it:
 
 # Train from scratch example: 
 python ./run_bounti_fetal_seg.py ./train-imgs-folder ./train-labels-folder ./test-imgs-folder ./checkpoint-folder ./results-folder 128 31 1 0 200000 
