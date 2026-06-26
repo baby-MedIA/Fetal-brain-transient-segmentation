@@ -10,19 +10,12 @@ Please refer to [^2] and [^3] for the repository and paper regarding the reconst
 
 ## Instructions to run BOUNTI-TR:
 
-Preprocessing of the T2w images (in ".nii.gz" format) needs to be done following the tools on this docker [^6] (please read instructions for using the docker):
+Preprocessing of the T2w images (in ".nii.gz" format) needs to be done following the tools on this docker [^6] 
+**Please read instructions for using the docker to preprocess images in "instructions.txt" in "preprocessing.zip" - preprocessing folder with files for it!!!**
 
-1) T2w MRI images for input to BOUNTI-TR should be brain extracted - in case you need to do skull stripping you can use the 3D CNN tool in [^6] - and use the following command on the docker: 
+1) T2w MRI images for input to BOUNTI-TR should be brain extracted - in case you need to do skull stripping you can use the 3D CNN tool in [^6] (STEP 2 in "instructions.txt")
 
-bash /home/auto-proc-svrtk/scripts/auto-brain-bounti-segmentation-fetal.sh /home/data/your_folder_with_brain_svr_t2_files  /home/data/output_folder_for_segmentations
-
-2) Images need to be preprocessed using the file "", you can run it in the same docker by addint it to the /home/auto-proc-svrtk/scripts directory:
-
-scp -r /home/data/folder_in_your_machine/preprocessing.sh  /home/data/scripts
-
-bash /home/auto-proc-svrtk/scripts/auto-brain-bounti-segmentation-fetal.sh /home/data/your_folder_with_brain_svr_t2_files  /home/data/output_folder_for_segmentations
-
-- This command resamples images to the desired image size (256x256x256) using pad and reorients to the standard radiological atlas space.
+2) Images need to be preprocessed using the file "preprocess.sh" inside the preprocessing folder "preprocessing.zip" (STEP 4 in "instructions.txt")
 
 3) Once preprocess is done use these outputs to either train from scratch (you'll need T2w images + corresponding training labels of the tissues) or test the trained model on your machine (only T2w images needed) - you can also use the environement shared here "bounti-tr_env.yml" to run it
    
