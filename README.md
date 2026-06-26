@@ -16,7 +16,9 @@ Preprocessing of the T2w images (in ".nii.gz" format) needs to be done following
 
 bash /home/auto-proc-svrtk/scripts/auto-brain-bounti-segmentation-fetal.sh /home/data/your_folder_with_brain_svr_t2_files  /home/data/output_folder_for_segmentations
 
-2) Images need to be preprocessed using the command in the docker:
+2) Images need to be preprocessed using the file "", you can run it in the same docker by addint it to the /home/auto-proc-svrtk/scripts directory:
+
+scp -r /home/data/folder_in_your_machine/preprocessing.sh  /home/data/scripts
 
 bash /home/auto-proc-svrtk/scripts/auto-brain-bounti-segmentation-fetal.sh /home/data/your_folder_with_brain_svr_t2_files  /home/data/output_folder_for_segmentations
 
