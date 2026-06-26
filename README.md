@@ -1,4 +1,4 @@
-# Fetal-brain-transient-segmentation - BOUNTI-TR model 
+# Fetal-brain-transient-segmentation
 
 An automatic model - BOUNTI-TR - to segment T2w MRI of the fetal brain into 31 ROIs (of left and right hemispheres) from 21-36 weeks of gestational age, including transient regions: Subplate, Ventricular Zone and Ganglionic Eminence (see [^4] for segmentation details) and Periventricular White Matter (subsegmented in 3 crossroad portions: C1, C2+C5 and C4 - see [^5] for segmentation details). 
 
